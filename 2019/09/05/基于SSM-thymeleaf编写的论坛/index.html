@@ -204,6 +204,7 @@ var _hmt = _hmt || [];
 <li>用户的历史记录功能<br> 无论是查询发表过的主题还是跟帖，都可以对对应数据表的account使用like查询获得。</li>
 <li>搜索功能<br> 对article表中的title数据使用like查询获得。</li>
 <li>显示主题最后修改时间<br> 在article数据表中添加一个时间变量，在对主题进行修改（增删楼层，修改内容）时更新为now。同时在article类中也添加类似属性。<br> 同理可以在select的时候按照最后修改时间降序排序，就能做到最后修改的主题在最上。</li>
+<li>显示跟帖时间<br> 同上。</li>
 <li>修改帖子内容<br> 使用th:if对floor.acoount与session.user.account进行比对，相同则添加修改内容链接</li>
 <li>版区，主题，楼层的分页<br> github上的pagehelper，请。</li>
 </ol>
